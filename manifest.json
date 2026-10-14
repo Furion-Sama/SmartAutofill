@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Autofill for Forms",
+  "version": "1.0.0",
+  "description": "Save your profile locally and choose which details to fill into Google Forms.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Smart Autofill",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

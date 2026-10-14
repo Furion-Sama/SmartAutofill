@@ -1,0 +1,26 @@
+ .smart-autofill-wrap {
+  display: inline-flex !important; align-items: center; gap: 6px;
+  position: relative; margin: 5px 0 8px; z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+.smart-autofill-trigger {
+  border: 1px solid #dadce0; border-radius: 18px; background: #fff;
+  color: #1a73e8; padding: 6px 11px; font-size: 12px; font-weight: 600;
+  cursor: pointer; box-shadow: 0 1px 3px rgba(60,64,67,.15);
+}
+.smart-autofill-trigger:hover { background: #f1f6ff; }
+.smart-autofill-menu {
+  position: absolute; top: calc(100% + 5px); left: 0; min-width: 190px;
+  max-width: 260px; padding: 8px; background: #fff; color: #202124;
+  border: 1px solid #dadce0; border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(60,64,67,.22); z-index: 2147483647;
+}
+.smart-autofill-menu[hidden] { display: none !important; }
+.smart-autofill-menu p { margin: 3px 5px 7px; font-size: 12px; color: #5f6368; }
+.smart-autofill-option {
+  display: block; width: 100%; padding: 8px; margin: 2px 0; text-align: left;
+  border: 0; border-radius: 6px; background: white; color: #202124;
+  cursor: pointer; font-size: 13px;
+}
+.smart-autofill-option:hover { background: #f1f3f4; }
+.smart-autofill-empty { color: #b3261e !important; }

@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; width: 340px; color: #202124; background: #f8f9fa;
+  font: 14px/1.45 system-ui, -apple-system, Segoe UI, sans-serif;
+}
+main { padding: 18px; }
+h1 { margin: 0; font-size: 20px; }
+.intro { margin: 4px 0 16px; color: #5f6368; }
+label { display: block; margin: 12px 0; font-weight: 600; }
+input, textarea {
+  display: block; width: 100%; margin-top: 5px; padding: 9px 10px;
+  border: 1px solid #dadce0; border-radius: 8px; background: white;
+  color: #202124; font: inherit; font-weight: 400;
+}
+input:focus, textarea:focus { outline: 2px solid #a8c7fa; border-color: #1a73e8; }
+.actions { display: flex; gap: 8px; margin-top: 16px; }
+button { border: 0; border-radius: 8px; padding: 10px 13px; cursor: pointer; font: inherit; }
+.primary { flex: 1; background: #1a73e8; color: white; font-weight: 600; }
+.secondary { background: #e8eaed; color: #202124; }
+#status { min-height: 18px; margin: 9px 0 0; color: #137333; }
+.note { margin: 12px 0 0; color: #5f6368; font-size: 12px; }
